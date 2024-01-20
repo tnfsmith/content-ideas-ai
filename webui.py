@@ -16,8 +16,6 @@ class Ideas(BaseModel):
 
 # Async function to process the main logic
 progress_bar = None  # Global declaration
-def main(search_query, st):
-    progress_bar = st.progress(0)    
 async def main(search_query, st):
     try:
         search_results = search_google_web_automation(search_query, 10)
@@ -58,7 +56,6 @@ async def main(search_query, st):
         # Ensure progress bar is filled when process is complete
         
         progress_bar.progress(100)
-    progress_bar.progress(100)
 
 # Streamlit UI setup
 st.title("Content Idea Generator")
