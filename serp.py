@@ -19,11 +19,11 @@ def search_google_web_automation(query, num_results):
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(chrome_options=options)
-    #chrome_options = Options()
-    #chrome_options.add_argument("--headless")
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option("useAutomationExtension", False)
-    #driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
 
     stealth(
         driver,
