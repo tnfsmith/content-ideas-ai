@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
+from serp import search_google_web_automation
 import math
 
 def search_google_requests(query, num_results):
