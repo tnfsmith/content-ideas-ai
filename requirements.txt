@@ -2,3 +2,4 @@ openai
 pydantic
 selenium
 beautifulsoup4
+bs4
