@@ -1,5 +1,5 @@
 openai
 pydantic
-selenium
+selenium-stealth
 beautifulsoup4
 bs4
