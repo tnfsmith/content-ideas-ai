@@ -1,4 +1,4 @@
 openai
 pydantic
 selenium
-beautifulsoup4
+beautifulsoup
