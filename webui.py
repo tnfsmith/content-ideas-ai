@@ -54,13 +54,13 @@ async def main(search_query, st):
     finally:
         # Ensure progress bar is filled when process is complete
         progress_bar.progress(100)
-
+        progress_bar = st.progress(0)
 # Streamlit UI setup
 st.title("Content Idea Generator")
 
 # User input fields
 search_query = st.text_input("Enter the search query:", "AI in marketing")
-progress_bar = st.progress(0)
+
 
 # Button to trigger the process
 if st.button("Generate Ideas"):
