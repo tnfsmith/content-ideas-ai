@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from selenium_stealth import stealth
 import math
-import streamlit as st
+
 
 def search_google_web_automation(query, num_results):
     # Enforce limits on num_results

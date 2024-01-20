@@ -53,10 +53,8 @@ async def main(search_query, st):
         st.error(f"Error fetching search results: {e}")
     finally:
         # Ensure progress bar is filled when process is complete
-        progress_bar = st.progress(0)
         progress_bar.progress(100)
-        
-        progress_bar.progress(new_value)
+
 # Streamlit UI setup
 st.title("Content Idea Generator")
 
