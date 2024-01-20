@@ -21,8 +21,8 @@ def search_google_web_automation(query, num_results):
     driver = webdriver.Chrome(chrome_options=options)
     #chrome_options = Options()
     #chrome_options.add_argument("--headless")
-    #chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    #chrome_options.add_experimental_option("useAutomationExtension", False)
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option("useAutomationExtension", False)
     #driver = webdriver.Chrome(options=chrome_options)
 
     stealth(
