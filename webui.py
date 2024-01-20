@@ -60,6 +60,7 @@ st.title("Content Idea Generator")
 
 # User input fields
 search_query = st.text_input("Enter the search query:", "AI in marketing")
+progress_bar = st.progress(0)
 
 # Button to trigger the process
 if st.button("Generate Ideas"):

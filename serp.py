@@ -25,8 +25,7 @@ def search_google_web_automation(query, num_results):
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option("useAutomationExtension", False)
     driver = webdriver.Chrome(options=chrome_options)
-    progress_bar = st.progress(0)
-    progress_bar.progress(new_value)
+
     stealth(
         driver,
         languages=["en-US", "en"],
