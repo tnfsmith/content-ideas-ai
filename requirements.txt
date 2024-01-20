@@ -3,5 +3,5 @@ pydantic
 selenium-stealth
 beautifulsoup4
 newspaper3k
-
-bs4
+instructor
+python-dotenv
